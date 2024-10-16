@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"com.gyp1.inventorymgtapp"}];updateSearchResults();

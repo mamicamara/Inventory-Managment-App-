@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="383.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+   <!-- The title label at the top of the main view -->
+
+   <Label layoutX="36.0" layoutY="31.0" text="Inventory Management System" textFill="#3a5373">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Label>
+
+   <HBox alignment="CENTER" layoutX="14.0" layoutY="69.0" prefHeight="249.0" prefWidth="848.0">
+
+      <!-- This AnchorPane groups the TableView, Buttons and Search TextField on left section of the mainview -->
+
+      <AnchorPane prefHeight="246.0" prefWidth="430.0"
+                  style="-fx-border-image-width: 1; -fx-border-color: gray; -fx-border-insets: 7; -fx-border-radius: 5;">
+         <opaqueInsets>
+            <Insets/>
+         </opaqueInsets>
+         <Label layoutX="37.0" layoutY="30.0" text="Part">
+            <font>
+               <Font name="System Bold" size="12.0"/>
+            </font>
+         </Label>
+
+         <!-- The search TextField for Parts section -->
+         <TextField fx:id="tbxPrtSearch" layoutX="257.0" layoutY="26.0"/>
+
+         <!-- The TableView component for listing parts -->
+
+         <TableView fx:id="tblParts" layoutX="25.0" layoutY="61.0" prefHeight="130.0" prefWidth="382.0">
+            <columns>
+               <TableColumn fx:id="tbcolPrtID" prefWidth="75.0" text="Part ID"/>
+               <TableColumn fx:id="tbcolPrtName" prefWidth="75.0" text="Part Name"/>
+               <TableColumn fx:id="tbcolPrtInv" prefWidth="108.19999694824219" text="Inventory Level"/>
+               <TableColumn fx:id="tbcolPrtPrice" prefWidth="122.39999999999998" text="Price/Cost per Unit"/>
+            </columns>
+         </TableView>
+
+         <!-- The Search, Add, Modify and Delete buttons on the mainview's parts section -->
+         <Button fx:id="btnPrtSearch" layoutX="187.0" layoutY="26.0" mnemonicParsing="false"
+                 onAction="#handlePrtSearchBtn" prefWidth="55.0" text="Search"/>
+         <Button fx:id="btnPrtAdd" layoutX="182.0" layoutY="201.0" mnemonicParsing="false"
+                 onAction="#handlePrtAddBtn" prefWidth="55.0" text="Add"/>
+         <Button fx:id="btnPrtModify" layoutX="252.0" layoutY="200.0" mnemonicParsing="false"
+                 onAction="#handlePrtModifyBtn" prefHeight="26.0" prefWidth="55.0" text="Modify"/>
+         <Button fx:id="btnPrtDelete" layoutX="323.0" layoutY="201.0" mnemonicParsing="false"
+                 onAction="#handlePrtDeleteBtn" prefWidth="55.0" text="Delete"/>
+      </AnchorPane>
+
+      <!-- This AnchorPane groups the TableView, Buttons and Search TextField on right section of the mainview -->
+
+      <AnchorPane prefHeight="282.0" prefWidth="426.0"
+                  style="-fx-border-image-width: 1; -fx-border-color: gray; -fx-border-insets: 7; -fx-border-radius: 5;">
+         <opaqueInsets>
+            <Insets/>
+         </opaqueInsets>
+         <Label layoutX="37.0" layoutY="30.0" text="Product">
+            <font>
+               <Font name="System Bold" size="12.0"/>
+            </font>
+         </Label>
+
+         <!-- The search TextField for Products section -->
+         <TextField fx:id="tbxPrdtSearch" layoutX="257.0" layoutY="26.0"/>
+
+         <!-- The TableView component for listing products -->
+
+         <TableView fx:id="tblProducts" layoutX="25.0" layoutY="61.0" prefHeight="130.0" prefWidth="382.0">
+            <columns>
+               <TableColumn fx:id="tbcolPrdtID" prefWidth="75.0" text="Product ID"/>
+               <TableColumn fx:id="tbcolPrdtName" prefWidth="97.20001220703125" text="Product Name"/>
+               <TableColumn fx:id="tbcolPrdtInv" prefWidth="97.59999084472656" text="Inventory Level"/>
+               <TableColumn fx:id="tbcolPrdtPrice" prefWidth="111.19998779296873" text="Price per Unit"/>
+            </columns>
+         </TableView>
+
+         <!-- The Search, Add, Modify and Delete buttons on the mainview's products section -->
+
+         <Button fx:id="btnPrdtSearch" layoutX="187.0" layoutY="26.0" mnemonicParsing="false"
+                 onAction="#handlePrdtSearchBtn" prefWidth="55.0" text="Search"/>
+         <Button fx:id="btnPrdtAdd" layoutX="182.0" layoutY="201.0" mnemonicParsing="false"
+                 onAction="#handlePrdtAddBtn" prefWidth="55.0" text="Add"/>
+         <Button fx:id="btnPrdtModify" layoutX="253.0" layoutY="201.0" mnemonicParsing="false"
+                 onAction="#handlePrdtModifyBtn" prefWidth="55.0" text="Modify"/>
+         <Button fx:id="btnPrdtDelete" layoutX="323.0" layoutY="201.0" mnemonicParsing="false"
+                 onAction="#handlePrdtDeleteBtn" prefWidth="55.0" text="Delete"/>
+      </AnchorPane>
+   </HBox>
+
+   <!-- The exit button -->
+
+   <Button fx:id="btnExit" layoutX="745.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleExitButton"
+           prefHeight="26.0" prefWidth="70.0" text="Exit"/>
+</AnchorPane>

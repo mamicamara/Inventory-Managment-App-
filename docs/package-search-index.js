@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.gyp1.inventorymgtapp","l":"com.gyp1.inventorymgtapp"}];updateSearchResults();

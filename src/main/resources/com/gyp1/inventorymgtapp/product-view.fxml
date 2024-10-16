@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="523.0" prefWidth="724.0" style="-fx-border-color: gray; -fx-border-insets: 15; -fx-border-width: 1; -fx-border-radius: 7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Button fx:id="btnSearch" layoutX="332.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="26.0" prefWidth="87.0" text="Search" />
+    <Label fx:id="lblTitle" layoutX="51.0" layoutY="39.0" text="Add Product" textFill="#3a5373">
+        <font>
+          <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="tbxSearch" layoutX="434.0" layoutY="30.0" prefHeight="26.0" prefWidth="200.0" />
+    <Label layoutX="60.0" layoutY="94.0" text="ID" />
+    <Label layoutX="62.0" layoutY="129.0" text="Name" />
+    <Label layoutX="64.0" layoutY="163.0" text="Inv" />
+    <Label layoutX="64.0" layoutY="196.0" text="Price" />
+    <Label layoutX="63.0" layoutY="232.0" text="Max" />
+    <Label layoutX="192.0" layoutY="231.0" text="Min" />
+    <TextField fx:id="tbxId" disable="true" layoutX="102.0" layoutY="89.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-insets: 5;" />
+    <TextField fx:id="tbxName" layoutX="102.0" layoutY="124.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-insets: 5;" />
+    <TextField fx:id="tbxInv" layoutX="102.0" layoutY="158.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-insets: 5;" />
+    <TextField fx:id="tbxPrice" layoutX="102.0" layoutY="191.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-insets: 5;" />
+    <TextField fx:id="tbxMax" layoutX="102.0" layoutY="227.0" prefHeight="26.0" prefWidth="70.0" style="-fx-border-insets: 5;" />
+    <TextField fx:id="tbxMin" layoutX="231.0" layoutY="227.0" prefHeight="26.0" prefWidth="70.0" style="-fx-border-insets: 5;" />
+    <TableView fx:id="tblviewParts" layoutX="332.0" layoutY="76.0" prefHeight="130.0" prefWidth="340.0">
+      <columns>
+          <TableColumn fx:id="tblcolPartID" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="tblcolPartName" prefWidth="75.0" text="Part Name" />
+          <TableColumn fx:id="tblcolPartInv" prefWidth="102.19998168945312" text="Inventory Level" />
+          <TableColumn fx:id="tblcolPartPrice" prefWidth="86.4000244140625" text="Price per Unit" />
+      </columns>
+    </TableView>
+    <TableView fx:id="tblviewPrdctParts" layoutX="332.0" layoutY="261.0" prefHeight="130.0" prefWidth="340.0">
+      <columns>
+          <TableColumn fx:id="tblcolPrdctPartID" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="tblcolPrdctPartName" prefWidth="75.0" text="Part Name" />
+          <TableColumn fx:id="tblcolPrdctPartInv" prefWidth="101.19998168945312" text="Inventory Level" />
+          <TableColumn fx:id="tblcolPrdctPartPrice" prefWidth="87.20001220703125" text="Price per Unit" />
+      </columns>
+    </TableView>
+    <Button fx:id="btnAdd" layoutX="590.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="26.0" prefWidth="70.0" text="Add" />
+    <Button fx:id="btnDelete" layoutX="590.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="26.0" prefWidth="70.0" text="Delete" />
+    <Button fx:id="btnSave" layoutX="499.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="26.0" prefWidth="70.0" text="Save" />
+    <Button fx:id="btnCancel" layoutX="590.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="26.0" prefWidth="70.0" text="Cancel" />
+</AnchorPane>
