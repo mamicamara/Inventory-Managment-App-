@@ -36,18 +36,18 @@ Features
 Installation
 ============
 
-	-1 Clone the Repository: bash Copy code   git clone https://github.com/mamicamara/Inventory-Managment-App-.git
+	1 	Clone the Repository: bash Copy code   git clone https://github.com/mamicamara/Inventory-Managment-App-.git
 	  
-	-2	Open in IDE:
+	2	Open in IDE:
 	◦	Open the project in NetBeans or IntelliJ IDEA.
 	◦	Make sure the JDK and JavaFX are correctly configured in your IDE.
-	-3	Build the Project:
+	3	Build the Project:
 	◦	Ensure all dependencies are installed.
 	◦	Compile and run the application.
  
 Usage
 =====
-	1Launch the Application: Open the main form to manage inventory.
+	1	Launch the Application: Open the main form to manage inventory.
 	2	Manage Parts: Use the "Add," "Modify," and "Delete" buttons in the Parts pane to manage part entries.
 	3	Manage Products: Similarly, use the Products pane to add, modify, and delete product entries.
 	4	Search Functionality: Enter part or product IDs/names to quickly locate entries.
@@ -55,8 +55,9 @@ Usage
  
 Documentation
 =============
-•	Javadoc comments are included in the code for each class and method, detailing functionalities and potential future enhancements.
-Future Enhancements
+
+	•	Javadoc comments are included in the code for each class and method, detailing functionalities and potential future enhancements.
+	Future Enhancements
 	•	Persistent Data Storage: Implement a database or file storage to maintain inventory data between sessions.
 	•	User Authentication: Add user roles and authentication for enhanced security.
 	•	Reporting Features: Generate reports for inventory statistics and usage.
