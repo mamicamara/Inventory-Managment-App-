@@ -6,6 +6,7 @@ Overview
 
 This Inventory Management Application is a JavaFX desktop application designed for a small manufacturing organization to efficiently manage their inventory system. It replaces a manual spreadsheet process with a sophisticated graphical user interface (GUI), allowing users to add, modify, delete, and search for parts and products seamlessly.
 Features
+
 	•	User-Friendly GUI: Intuitive interface based on a provided mock-up, including:
 	◦	Main Form
 	◦	Add Part Form
@@ -24,7 +25,8 @@ Features
 
  Technical Requirements
  ======================
- •	Development Environment:
+ 
+	•	Development Environment:
 	◦	NetBeans 11.1 or later or IntelliJ IDEA (Community Edition)
 	◦	JDK 17 (LTS)
 	◦	JavaFX SDK
@@ -33,18 +35,19 @@ Features
  
 Installation
 ============
-1	Clone the Repository: bash Copy code   git clone https://github.com/mamicamara/Inventory-Managment-App-.git
-	2	  
-	3	Open in IDE:
+
+	-1 Clone the Repository: bash Copy code   git clone https://github.com/mamicamara/Inventory-Managment-App-.git
+	  
+	-2	Open in IDE:
 	◦	Open the project in NetBeans or IntelliJ IDEA.
 	◦	Make sure the JDK and JavaFX are correctly configured in your IDE.
-	4	Build the Project:
+	-3	Build the Project:
 	◦	Ensure all dependencies are installed.
 	◦	Compile and run the application.
  
 Usage
 =====
-1	Launch the Application: Open the main form to manage inventory.
+	1Launch the Application: Open the main form to manage inventory.
 	2	Manage Parts: Use the "Add," "Modify," and "Delete" buttons in the Parts pane to manage part entries.
 	3	Manage Products: Similarly, use the Products pane to add, modify, and delete product entries.
 	4	Search Functionality: Enter part or product IDs/names to quickly locate entries.
